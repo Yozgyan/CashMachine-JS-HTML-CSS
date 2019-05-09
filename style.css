@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding: 0;
+    background: radial-gradient(orange,red)
+}
+
+.container{
+    height: 500px;
+    width: 500px;
+    position:relative;
+    top:15%;
+    left:33%;
+    border-style:solid;
+    border-color:wheat;
+    
+
+}
+.container .box1{
+    position: relative;
+    top:10%;
+    left:35%;
+    font-style:normal;
+    font-size: 40px;
+}
+
+
+#dice1{
+    position: relative;
+    left:45.7%;
+    top:-20%;
+}
+img{
+    position: relative;
+    position: relative;
+    top:200;
+    left:25%;
+    height: 15vw;
+    width: 15vw;
+}
+#diceRoll{
+    position: relative;
+    top:250;
+    left:215;
+    height: 40px;
+    width: 40px;
+}
+
+
+#dom{
+    position: relative;
+    top:280;
+    left:150;
+    height: 100;
+    width:300;
+    color:white;
+}
+
