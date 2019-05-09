@@ -1,57 +1,318 @@
-body{
-    margin:0;
-    padding: 0;
-    background: radial-gradient(orange,red)
+* {
+
+    text-decoration: none;
+    font-size: 1.5vw;
+
 }
 
-.container{
-    height: 500px;
-    width: 500px;
-    position:relative;
-    top:15%;
-    left:33%;
-    border-style:solid;
-    border-color:wheat;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    color: white;
+}
+
+.menu {
+    text-align: center;
+    list-style: none;
+    text-align: left;
+    position: absolute;
+    top: 105px;
+    left: 1100px;
+    width: 400px;
+
+
+}
+
+.menu .menu1 li {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 255);
+    background-color: rgba(2, 2, 2, 0.466);
+    padding: 20px;
+    width: 180px;
+    height: 20px;
+    display: block;
+    text-align: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+
+}
+
+.menu .menu1 .menuHead {
+    position: relative;
+}
+
+.menu .menu1 li:hover {
+    /*background-color: #eeadad7a;*/
+    background-color: #34303518;
+    background-size: 100% 100%;
+
+}
+
+.menu img {
+    color: white;
+}
+
+.first {
+    background-color: #070000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-color: white;
+    border-bottom-style: groove;
+    
     
 
 }
-.container .box1{
+
+.first .header h1 {
+    text-align-last: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
     position: relative;
-    top:10%;
-    left:35%;
-    font-style:normal;
-    font-size: 40px;
+    left: -300;
+    
+
+}
+
+@keyframes header1 {
+    0%{
+        color:white;
+    }
+    50%{
+        color:black
+    }
+    100%{
+        color:white;
+    }
+}
+
+.first .header {
+    position: relative;
+
+}
+
+.cash {
+    width: 21.5vw;
+    min-height: 5.1vw;
+    background-color: rgba(22, 22, 22, 0.623);
+    margin: 6vw;
+    position: fixed;
+    top: -7vw;
+    left: 1015px;
+    flex-wrap: wrap;
+
+
+}
+
+.cash .cash1 h2 {
+    text-align: center;
+    margin: 0;
+    height: 8.1.3vw;
+    font-size: 2vw;
+    padding: 1.3vw;
+    animation: header1 3.5s ease-in 0s infinite;
 }
 
 
-#dice1{
-    position: relative;
-    left:45.7%;
-    top:-20%;
-}
-img{
-    position: relative;
-    position: relative;
-    top:200;
-    left:25%;
-    height: 15vw;
-    width: 15vw;
-}
-#diceRoll{
-    position: relative;
-    top:250;
-    left:215;
-    height: 40px;
-    width: 40px;
-}
+.cash button {
+    background-color: #f8f8f8;
+    cursor: pointer;
 
 
-#dom{
-    position: relative;
-    top:280;
-    left:150;
-    height: 100;
-    width:300;
+}
+
+.cash button:hover {
     color:white;
+    background:black;
+
 }
 
+img {
+    width: 25%
+}
+
+.menu li img {
+    width: 2vw;
+
+}
+
+.container {
+    width: 1280px;
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.178);
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #0649a09a;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+
+}
+
+.container .box .imgBox {
+    position: relative;
+    overflow: inherit;
+}
+
+.container .box .imgBox img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+
+
+}
+
+.container .box:hover .imgBox img {
+    transform: scale(1.2);
+}
+
+.container .box .details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.459);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.container .box:hover .details {
+    transform: scaleY(1);
+}
+
+.container .box .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.container .box .details .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ff0;
+}
+
+.container .box .details .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.dropmenu {
+    position: relative;
+    left: -110px;
+    padding: 0;
+    margin: 110px;
+    list-style: none;
+
+}
+
+.dropmenu .dropmenuul .dropmenuul {
+    transition: all 0.3s;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    left: 100%;
+    top: -2%;
+
+}
+
+.dropmenu .dropmenuul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: green
+}
+
+.dropmenu .dropmenuul .list1 {
+    padding: 15px;
+    position: relative;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid white;
+}
+
+.dropmenu .dropmenuul .list1 .aaa {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.dropmenu .dropmenuul .list1:hover>.dropmenuul {
+    opacity: 10;
+    visibility: visible;
+    color: red;
+}
+
+.middle {
+    position: relative;
+    left: 480px;
+    top: -423px;
+    width: 530px;
+    padding: 0;
+    margin: 0px;
+    background-color: #070000;
+    animation: myframes 4s ease-in 0s 1;
+
+
+}
+
+.middle .middle1 {
+    position: relative;
+    left: 20%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+.middle .middle1 h6 {
+    padding: 60px;
+    position: relative;
+    width: 1vw;
+    height: 14.3vw;
+    font-size: 4vw;
+    font-weight: 400px;
+    transition: border-radius 5s;
+    transition: transform 4s;
+
+
+
+}
+
+.middle .middle1 h6:hover {
+    border-radius: 50%;
+    transform: rotate(390deg);
+}
+
+@keyframes myframes {
+    0% {
+        background: white
+    }
+
+    50% {
+        background: red
+    }
+
+    100% {
+
+        background: black
+    }
+}
