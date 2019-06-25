@@ -1,5 +1,12 @@
-body{
-    margin:0;
+* {
+
+    text-decoration: none;
+    font-size: 1.5vw;
+
+}
+
+body {
+    margin: 0;
     padding: 0;
     background: radial-gradient(orange,red);
     transition: background 0.5s ease;
@@ -18,12 +25,15 @@ body{
     
 
 }
-.container .box1{
+
+.first .header h1 {
+    text-align-last: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
     position: relative;
-    top:10%;
-    left:35%;
-    font-style:normal;
-    font-size: 40px;
+    left: -300;
+    
+
 }
 
 .images{
@@ -56,8 +66,25 @@ body{
     background-color: rgba(70, 62, 53, 0)
 }
 
+.dropmenu .dropmenuul .dropmenuul {
+    transition: all 0.3s;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    left: 100%;
+    top: -2%;
 
-#dom{
+}
+
+.dropmenu .dropmenuul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: green
+}
+
+.dropmenu .dropmenuul .list1 {
+    padding: 15px;
     position: relative;
     top:240;
     left:140;
