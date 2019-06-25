@@ -1,17 +1,20 @@
 body{
     margin:0;
     padding: 0;
-    background: radial-gradient(orange,red)
+    background: radial-gradient(orange,red);
+    transition: background 0.5s ease;
+    position: relative;
 }
 
 .container{
     height: 500px;
     width: 500px;
     position:relative;
-    top:15%;
-    left:33%;
+    top:35%;
+    left:50%;
     border-style:solid;
-    border-color:wheat;
+    border-color:yellow;
+    transform: translate(-50%,-50%)
     
 
 }
@@ -23,35 +26,108 @@ body{
     font-size: 40px;
 }
 
-
-#dice1{
+.images{
     position: relative;
-    left:45.7%;
-    top:-20%;
-}
-img{
-    position: relative;
-    position: relative;
-    top:200;
-    left:25%;
+    top:110;
+    left:8%;
     height: 15vw;
     width: 15vw;
+    border:none;
+    border-radius: 20px;
 }
-#diceRoll{
+
+.button2{
     position: relative;
-    top:250;
-    left:215;
+    top:200;
+    left:205;
     height: 40px;
-    width: 40px;
+    width: 100px;
+    border:none;
+    color:rgba(216, 216, 6, 0.959);
+    background-color: black;
+    text-align: center;
+    font-size:16px;
+    border-radius: 8px;
+    animation: myframes 3s ease-in 0s infinite;
+    
+    
+}
+#diceRoll:hover{
+    background-color: rgba(70, 62, 53, 0)
 }
 
 
 #dom{
     position: relative;
-    top:280;
-    left:150;
+    top:240;
+    left:140;
     height: 100;
     width:300;
-    color:white;
+    color:rgba(3, 3, 3, 0.87);
 }
 
+#rolled1{
+    position: relative;
+    height: 100px;
+    width: 500px;
+    left:33%;
+    text-align: center;
+    font-size: 40px;
+    color:black;
+
+}
+
+.text1{
+    
+    position: relative;
+    width:400;
+    height: 100;
+    top:-300;
+    left:20;
+    font-size:80;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation:secondFrame 3s ease-in-out 0s infinite;
+
+}
+.text2{
+    
+    position: relative;
+    width:400;
+    height: 100;
+    top:-400;
+    left:1000;
+    font-size:80;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation:secondFrame 3s ease-in-out 0s infinite;
+    
+}
+
+@keyframes myframes {
+    0% {
+        background: rgb(7, 6, 6)
+    }
+
+    50% {
+        background: rgb(167, 141, 141)
+    }
+
+    100% {
+
+        background: black
+    }
+}
+
+@keyframes secondFrame {
+    0% {
+        color: rgb(235, 227, 227)
+    }
+
+    50% {
+        color: rgb(19, 6, 6)
+    }
+
+    100% {
+
+        color: rgb(247, 238, 238)
+    }
+}
